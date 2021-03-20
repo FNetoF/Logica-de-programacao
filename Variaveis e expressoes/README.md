@@ -1,5 +1,5 @@
-###Preguntas 
-
+<h3>Preguntas</h3> 
+<hr>
 <ol type="1">
 	<li>
 		Efetuar a leitura de um número real e apresentar o resultado do quadrado desse número.
