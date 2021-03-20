@@ -1,4 +1,4 @@
-<h3>Preguntas</h3> 
+<h2>Preguntas</h2> 
 <hr>
 <ol type="1">
 	<li>
