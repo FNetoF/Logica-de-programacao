@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main(){
-    int i, soma;
+    int a= 3, b= 5, i, result;
 
-    for( i= 1; i<= 100; i++){
-        if(i % 2 == 0){
-            soma += i;
+    for (i = 1; i <= 1000; i++){
+        if (i % a || i % b){
+            result += i;
         }
     }
-    printf("Soma dos 50 primeiros numeros: %d\n", soma);
+    printf("A soma dos multiplos de 3 e 5 abaixo de 1000 eh: %d\n", result);
     return 0;
 }
