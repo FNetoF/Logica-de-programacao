@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int vet[10], i;
+    int vet[10], i, aux;
 
     //preenche o vetor
     printf("Informe 10 valores inteiro\n");
@@ -9,13 +9,14 @@ int main(){
         printf("[%i] ", i);
         scanf("%d",&vet[i]);
     }
-    //Imprimi 
     printf("\n");
+    
+    //verificando se existem valores iguais
     for (i = 0; i < 10; i++) {
-        //atribuindo valores 0 para números negativos
-        if(vet[i] < 0) {
-            vet[i] = 0;
-            printf("[%i] %d\n", i, vet[i]);
+        for(aux = i + 1; aux < 10; aux++) {
+            if (vet[i] == vet[aux]){
+                printf("O valor %d se repete\n", vet[i]);
+            }
         }
     }
     return 0;
