@@ -11,7 +11,7 @@
 		Escreva um programa em C que escreva na tela de 1 em 1, de 1 ate 100, 3 vezes. A primeira vez deve usar a estrutura de repetição for, a segunda while, e a terceira do while.<br><br>
 	</li>
 	<li>
-		14. Faça um algoritmo utilizando o comando while (enquanto) que mostra uma contagem regressiva na tela, iniciando em 10 e terminando em 0. Mostrar uma mensagem ”FIM!”após a contagem.<br><br>
+		Faça um algoritmo utilizando o comando while (enquanto) que mostra uma contagem regressiva na tela, iniciando em 10 e terminando em 0. Mostrar uma mensagem ”FIM!”após a contagem.<br><br>
 	</li>
 	<li>
 		Faça um programa que peça ao usuário para digitar 10 valores e some-os.<br><br>
