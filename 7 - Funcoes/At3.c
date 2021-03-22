@@ -1,23 +1,29 @@
 #include <stdio.h>
 
-int potencia(int x, int y){
-    int potencia=1, i=0;
+void verificador(int a, int b, int c){
 
-    while(i != y){
-        potencia *= x;
-        i+=1;
+    if (a<b + c && b<a + c && c<a + b){
+        if (a==b && b==c){
+            printf("\nEquilatero\n");
+        }else if(a==b || a==c || b==c){
+            printf("\nIsosceles\n");
+        }else{
+            printf("\nEscaleno\n");
+        }   
+    }else{
+        printf("\nNao eh triangulo\n");
     }
-  return potencia;
 }
 
 int main(){
-    int n1, n2, result;
+    float lado1, lado2, lado3;
 
-    printf("Informe a base: \n");
-    scanf("%d", &n1);
-    printf("Informe o expoente: \n");
-    scanf("%d", &n2);
+    printf("Primeiro lado: \n");
+    scanf("%f", &lado1);
+    printf("Segundo lado: \n");
+    scanf("%f", &lado2);
+    printf("Terceiro lado: \n");
+    scanf("%f", &lado3);
 
-    result= potencia(n1, n2);
-    printf("A base de %d elvado a %d eh: %d\n", n1, n2, result);
+    verificador(lado1,lado2, lado3);
 }

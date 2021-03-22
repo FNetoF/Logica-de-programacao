@@ -1,29 +1,41 @@
 #include <stdio.h>
 
-void verificador(int a, int b, int c){
-
-    if (a<b + c && b<a + c && c<a + b){
-        if (a==b && b==c){
-            printf("\nEquilatero\n");
-        }else if(a==b || a==c || b==c){
-            printf("\nIsosceles\n");
-        }else{
-            printf("\nEscaleno\n");
-        }   
-    }else{
-        printf("\nNao eh triangulo\n");
+int fatorial(int n){
+    int i, fat;
+    
+    if (n <= 1){
+        return 1;
     }
+
+    fat = 1;
+
+    for (i = 2; i <= n; i++){
+        fat *= i;
+    }
+    return fat;
+}
+
+int somatorio(int n){
+    int somatorio= 0, i= 1;
+
+    while(i <= n){
+        somatorio += i;
+        i++;
+    }
+    return somatorio;
 }
 
 int main(){
-    float lado1, lado2, lado3;
+    int result_fatorial,result_somatorio, n1=0, cont=0, n2=0;
 
-    printf("Primeiro lado: \n");
-    scanf("%f", &lado1);
-    printf("Segundo lado: \n");
-    scanf("%f", &lado2);
-    printf("Terceiro lado: \n");
-    scanf("%f", &lado3);
+    printf("Informe um numero a ser fatorado: \n");
+    scanf("%d", &n1);
+    printf("Qual numero deseja fazer somatorio?\n");
+    scanf("%d", &n2);
 
-    verificador(lado1,lado2, lado3);
+    result_fatorial= fatorial(n1);
+    result_somatorio= somatorio(n2);
+
+    printf("\n%d!= %d\n", n1, result_fatorial);
+    printf("Somatorio de 1 ate %d eh: %d\n", n2, result_somatorio);
 }
