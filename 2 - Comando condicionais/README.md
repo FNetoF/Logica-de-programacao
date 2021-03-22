@@ -24,14 +24,12 @@
     </li>
     <li>
 		Faça um programa que receba a altura e o peso de uma pessoa. De acordo com a tabela a seguir, verifique e mostra qual a classificação dessa pessoa.<br>
-					   _______________________________________________________________________<br>
-					   |Altura         |                   Peso                               |<br>
-					   |_______________|______________________________________________________|<br>
-					   |		   | Até 60  |  Entre 60 e 90 (Inclusive)  |  Acima de 90 |<br>
-					   |Menor que 1,20 |   A     |            D                |    G         |<br>
-					   |De 1,20 a 1,70 |   B     |            E                |    H         |<br>
-					   |Maior que 1,70 |   C     |            F                |    I         |<br>
-					   |_______________|_________|_____________________________|______________|<br><br><br>
+					   Altura         |                  |Peso|  |
+					   :---------: | :------: | :-------: |:------:
+					   		  | Até 60  |  Entre 60 e 90 (Inclusive)  |  Acima de 90 
+					   Menor que 1,20 |   A     |            D                |    G        
+					   De 1,20 a 1,70 |   B     |            E                |    H         
+					   Maior que 1,70 |   C     |            F                |    I     
     </li>
     <li>
 		Usando switch, escreva um programa que leia um inteiro entre 1 e 7 e imprima o dia da semana correspondente a este numero. Isto é, domingo, se 1, segunda-feira, se 2, e assim por diante.<br><br>
